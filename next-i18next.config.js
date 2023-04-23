@@ -1,4 +1,4 @@
-const defaultLocale = process.env.LANG ? process.env.LANG.replace('_', '-').toLowerCase() : 'en';
+const defaultLocale = process.env.LANG ? process.env.LANG.split('_')[0].toLowerCase() : 'en';
 
 module.exports = {
   i18n: {
